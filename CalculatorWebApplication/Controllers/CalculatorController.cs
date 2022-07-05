@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using CalculatorWebApplication.Domain.request;
+﻿using CalculatorWebApplication.Domain.request;
 using CalculatorWebApplication.Domain.response;
+using CalculatorWebApplication.Filter;
 using CalculatorWebApplication.Service.Interface;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CalculatorWebApplication.Controllers
@@ -64,6 +63,7 @@ namespace CalculatorWebApplication.Controllers
             }
         }
 
+        [ServiceFilter(typeof(ValidateCalculateRequestFilter))]
         [HttpPost]
         [Route("/divide")]
         public CalculatorResponse Division([FromBody] CalculatorRequest req)
