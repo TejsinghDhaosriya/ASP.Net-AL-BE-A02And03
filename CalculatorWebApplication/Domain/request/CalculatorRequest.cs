@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-
-namespace CalculatorWebApplication.Domain.request
+﻿namespace CalculatorWebApplication.Domain.request
 {
     public class CalculatorRequest
     {
@@ -10,6 +7,7 @@ namespace CalculatorWebApplication.Domain.request
         }
 
         public double FirstNumber { get; set; }
+
         public double LastNumber { get; set; }
     }
 
