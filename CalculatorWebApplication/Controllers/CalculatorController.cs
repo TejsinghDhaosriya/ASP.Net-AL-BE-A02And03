@@ -49,7 +49,7 @@ namespace CalculatorWebApplication.Controllers
         }
 
         [HttpPost]
-        [Route("/multiplication")]
+        [Route("/multiply")]
         public CalculatorResponse Multiplication([FromBody] CalculatorRequest req)
         {
             try
