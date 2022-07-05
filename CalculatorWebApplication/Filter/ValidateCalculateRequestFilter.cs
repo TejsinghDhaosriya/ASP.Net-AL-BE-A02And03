@@ -10,16 +10,7 @@ namespace CalculatorWebApplication.Filter
         {
             {
                 var req = context.ActionArguments["req"] as CalculatorRequest;
-                if (req == null)
-                {
-                    context.HttpContext.Response.StatusCode = 400;
-                    context.Result = new ContentResult()
-                    {
-                        Content = "Invalid Data Passed in Request"
-                    };
-                    return;
-                }
-
+     
                 if (req!.FirstNumber <=0 || req.LastNumber <=0)
                 {
                     context.HttpContext.Response.StatusCode = 400;
