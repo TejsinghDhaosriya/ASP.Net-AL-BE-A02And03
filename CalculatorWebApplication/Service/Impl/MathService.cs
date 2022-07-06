@@ -2,7 +2,7 @@
 
 namespace CalculatorWebApplication.Service.Impl
 {
-    public class Math : IMath
+    public class MathService : IMathService
     {
         public double Add(double number, double number2) => number + number2;
 

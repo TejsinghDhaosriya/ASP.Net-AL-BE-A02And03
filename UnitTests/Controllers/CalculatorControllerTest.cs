@@ -12,7 +12,7 @@ public class CalculatorControllerTest
     {
         const double firstNumber = 2;
         const double lastNumber = 3;
-        var mockMathService = new Mock<IMath>();
+        var mockMathService = new Mock<IMathService>();
         mockMathService.Setup(service => service.Add(firstNumber, lastNumber)).Returns(firstNumber + lastNumber);
         var sut = new CalculatorController(mockMathService.Object);
 
@@ -30,7 +30,7 @@ public class CalculatorControllerTest
     {
         const double firstNumber = 2;
         const double lastNumber = 3;
-        var mockMathService = new Mock<IMath>();
+        var mockMathService = new Mock<IMathService>();
         mockMathService.Setup(service => service.Add(firstNumber, lastNumber)).Throws(new Exception("Parsing Error"));
         var sut = new CalculatorController(mockMathService.Object);
 
@@ -48,7 +48,7 @@ public class CalculatorControllerTest
     {
         const double firstNumber = 2;
         const double lastNumber = 3;
-        var mockMathService = new Mock<IMath>();
+        var mockMathService = new Mock<IMathService>();
         mockMathService.Setup(service => service.Subtract(firstNumber, lastNumber)).Returns(firstNumber - lastNumber);
         var sut = new CalculatorController(mockMathService.Object);
 
@@ -66,7 +66,7 @@ public class CalculatorControllerTest
     {
         const double firstNumber = 2;
         const double lastNumber = 3;
-        var mockMathService = new Mock<IMath>();
+        var mockMathService = new Mock<IMathService>();
         mockMathService.Setup(service => service.Subtract(firstNumber, lastNumber)).Throws(new Exception("Memory Error"));
         var sut = new CalculatorController(mockMathService.Object);
 
@@ -86,7 +86,7 @@ public class CalculatorControllerTest
     {
         const double firstNumber = 2;
         const double lastNumber = 3;
-        var mockMathService = new Mock<IMath>();
+        var mockMathService = new Mock<IMathService>();
         mockMathService.Setup(service => service.Multiply(firstNumber, lastNumber)).Returns(firstNumber * lastNumber);
         var sut = new CalculatorController(mockMathService.Object);
 
@@ -104,7 +104,7 @@ public class CalculatorControllerTest
     {
         const double firstNumber = 2;
         const double lastNumber = 3;
-        var mockMathService = new Mock<IMath>();
+        var mockMathService = new Mock<IMathService>();
         mockMathService.Setup(service => service.Multiply(firstNumber, lastNumber)).Throws(new Exception("Memory Error"));
         var sut = new CalculatorController(mockMathService.Object);
 
@@ -123,7 +123,7 @@ public class CalculatorControllerTest
     {
         const double firstNumber = 2;
         const double lastNumber = 3;
-        var mockMathService = new Mock<IMath>();
+        var mockMathService = new Mock<IMathService>();
         mockMathService.Setup(service => service.Divide(firstNumber, lastNumber)).Returns(firstNumber / lastNumber);
         var sut = new CalculatorController(mockMathService.Object);
 
@@ -141,7 +141,7 @@ public class CalculatorControllerTest
     {
         const double firstNumber = 2;
         const double lastNumber = 3;
-        var mockMathService = new Mock<IMath>();
+        var mockMathService = new Mock<IMathService>();
         mockMathService.Setup(service => service.Divide(firstNumber, lastNumber)).Throws(new Exception("Memory Error"));
         var sut = new CalculatorController(mockMathService.Object);
 

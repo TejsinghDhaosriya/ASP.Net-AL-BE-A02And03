@@ -1,6 +1,6 @@
 using CalculatorWebApplication.Filter;
 using CalculatorWebApplication.Service.Interface;
-using Math = CalculatorWebApplication.Service.Impl.Math;
+using MathService = CalculatorWebApplication.Service.Impl.MathService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //per request object
-builder.Services.AddScoped<IMath,Math>();
+builder.Services.AddScoped<IMathService,MathService>();
 builder.Services.AddScoped<ValidateCalculateRequestFilter>();
 
 var app = builder.Build();

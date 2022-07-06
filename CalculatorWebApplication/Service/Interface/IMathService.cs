@@ -1,6 +1,6 @@
 ﻿namespace CalculatorWebApplication.Service.Interface
 {
-    public interface IMath
+    public interface IMathService
     {
 
         double Add(double number, double number2);
