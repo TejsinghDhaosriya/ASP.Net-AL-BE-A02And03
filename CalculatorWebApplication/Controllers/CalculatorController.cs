@@ -11,9 +11,9 @@ namespace CalculatorWebApplication.Controllers
     public class CalculatorController : Controller
     {
 
-        private readonly IMath _math;
+        private readonly IMathService _math;
 
-        public CalculatorController(IMath math)
+        public CalculatorController(IMathService math)
         {
             _math = math;
         }
