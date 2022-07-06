@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace CalculatorWebApplication.Controllers
 {
     [ApiController]
-    [Route("/api")]
     public class CalculatorController : Controller
     {
 
