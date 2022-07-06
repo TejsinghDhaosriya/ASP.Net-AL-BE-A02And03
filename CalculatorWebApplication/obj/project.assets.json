@@ -213,11 +213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tej\\workArea\\Asp.Net\\CalculatorWebApplication\\CalculatorWebApplication\\CalculatorWebApplication.csproj",
+      "projectUniqueName": "C:\\Users\\tej\\workArea\\Asp.Net\\ASP.Net-AL-BE-A02And03\\CalculatorWebApplication\\CalculatorWebApplication.csproj",
       "projectName": "CalculatorWebApplication",
-      "projectPath": "C:\\Users\\tej\\workArea\\Asp.Net\\CalculatorWebApplication\\CalculatorWebApplication\\CalculatorWebApplication.csproj",
+      "projectPath": "C:\\Users\\tej\\workArea\\Asp.Net\\ASP.Net-AL-BE-A02And03\\CalculatorWebApplication\\CalculatorWebApplication.csproj",
       "packagesPath": "C:\\Users\\tej\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tej\\workArea\\Asp.Net\\CalculatorWebApplication\\CalculatorWebApplication\\obj\\",
+      "outputPath": "C:\\Users\\tej\\workArea\\Asp.Net\\ASP.Net-AL-BE-A02And03\\CalculatorWebApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tej\\AppData\\Roaming\\NuGet\\NuGet.Config",
